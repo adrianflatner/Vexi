@@ -1,12 +1,12 @@
-body {
+/*body {
     /* feel free to change height */
-    height: 2400px;
+/*    height: 3400px;
     background: linear-gradient(
       to bottom,
       #101832,
       #152455
     );
-  }
+  }*/
   
   h1 {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -32,7 +32,7 @@ body {
 #steps {
     width: 620px;
     margin: auto;
-    margin-top: 280px;
+    margin-top: 250px;
 }
 
 img{

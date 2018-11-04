@@ -6,17 +6,19 @@
 </head>
 <body>
 		<img class = "bck" src="background.png">
+		<a href="index.html"><img id ="logo" src="logo.png"></a>
 		<div id="buttonCluster">
-			<button id ="buttin"><a class ="buttonstyle" id="roadmap" href="roadmap.html">Roadmap</a></button>
 			<button id ="contact"><a class ="buttonstyle" id = "contact" href="about.html">Contact</a></button>
+			<button id ="buttin"><a class ="buttonstyle" id="roadmap" href="roadmap.html">Roadmap</a></button>
 		</div>
 		<div class = "scroller">
-			<div class = feature id ="feature"><a class="features" id="contentA" href="#dv1" onclick="mewhite('feature')">Content A</a></div>
-			<div class = feature2 id="feature2"><a class ="features" id="contentB" href="#dv2" onclick="mewhite('feature2')">Content B</a></div>
-			<div class = feature3 id="feature3"><a class ="features " id="contentC" href="#dv3" onclick="mewhite('feature3')">Content C</a></div>
-			<div class = feature4 id= "feature4"><a class ="features" id="contentD" href="#dv4" onclick="mewhite('feature4')">Content D</a></div>
+			<div class = feature id ="feature"><a class="features" id="contentA" href="#step1" onclick="mewhite('feature')">FEATURE ONE</a></div>
+			<div class = feature2 id="feature2"><a class ="features" id="contentB" href="#step2" onclick="mewhite('feature2')">FEATURE TWO</a></div>
+			<div class = feature3 id="feature3"><a class ="features " id="contentC" href="#step3" onclick="mewhite('feature3')">FEATURE THREE</a></div>
+			<div class = feature4 id= "feature4"><a class ="features" id="contentD" href="#step4" onclick="mewhite('feature4')">FEATURE FOUR</a></div>
 		</div>
-		<div class = "wrap">
+
+<!--		<div class = "wrap">
 			<img class = "vector" src="Vector.png">
 			<div class = "div1" id ="dv1">
 				<img class = "phone" src="phone.png" id = "phone1">
@@ -30,7 +32,22 @@
 			<div class = "div4" id ="dv4">
 				<img class = "phone" src="phone.png" id="phone4">
 			</div>										
-		</div>
-		<script type="text/javascript" src = "vexi.js"></script>
+		</div>-->
+
+	<div id = "steps">
+        <svg class = "star-svg" width="613" height="1972" viewBox="0 0 613 1972" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="1" id="star-path" d="M555 5.5C380.333 56.5 26.1999 248.1 6.99986 606.5C-17.0001 1054.5 357.5 996 534 1183.5C710.5 1371 584.5 1808.5 6.99986 1966.5" stroke="#FCC90E" stroke-width="10" stroke-linecap="round" stroke-dasharray="20 20"/>
+        </svg>  
+        <svg width="613" class = "star-svg" height="1972" viewBox="0 0 613 1972" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.5" d="M555 5.5C380.333 56.5 26.1999 248.1 6.99986 606.5C-17.0001 1054.5 357.5 996 534 1183.5C710.5 1371 584.5 1808.5 6.99986 1966.5" stroke="#FCC90E" stroke-width="10" stroke-linecap="round" stroke-dasharray="20 20"/>
+        </svg>
+        <img  id = "step1" src = "notVisited.png"/>
+        <img id = "step2" style ="float:left; margin-top: 500px; margin-left: -80px" src = "notVisited.png"/>
+        <img  id = "step3" src = "notVisited.png"/>
+        <img  id = "step4" src = "notVisited.png"/>    
+    </div>
+    
+	<script src="scroll.js"></script>
+	<script type="text/javascript" src = "vexi.js"></script>
 </body>
 </html>

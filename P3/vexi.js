@@ -1,6 +1,4 @@
 
-document.getElementsByClassName("div2")[0].style.left = -10;
-
 window.onscroll = function() {makewhite()};
 
 const feature = document.getElementById("feature");
@@ -15,19 +13,20 @@ const contentD = document.getElementById("contentD");
 const listofcontent = [contentA, contentB, contentC, contentD];
 
 function makewhite(){
-	const phone = document.getElementById("dv1").offsetTop;
-	const phone2 = document.getElementById("dv2").offsetTop;
-	const phone3 = document.getElementById("dv3").offsetTop;
-	const phone4 = document.getElementById("dv4").offsetTop;
-	var docscroll = document.documentElement.scrollTop;
-	
-	if(docscroll > phone && docscroll < phone2){
+	const phone = document.getElementById("step1").offsetTop;
+	const phone2 = document.getElementById("step2").offsetTop;
+	const phone3 = document.getElementById("step3").offsetTop;
+	const phone4 = document.getElementById("step4").offsetTop;
+	//var docscroll = document.documentElement.scrollTop;
+	var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+	if(scrollPercentage > 0.1 && scrollPercentage < 0.25){
 		feature.style.backgroundColor = "white";
 		feature2.style.backgroundColor = "#373E56";
 		contentA.style.color = "#373E56";
 		contentB.style.color = "white";
 		}
-	if(docscroll > phone2 && docscroll < phone3){
+	if(scrollPercentage > 0.25 && scrollPercentage < 0.6){
 		feature.style.backgroundColor = "#373E56";
 		feature2.style.backgroundColor = "white";
 		feature3.style.backgroundColor = "#373E56";
@@ -35,7 +34,7 @@ function makewhite(){
 		contentC.style.color = "white";
 		contentB.style.color = "#373E56";
 	}
-	if(docscroll > phone3 && docscroll < phone4){
+	if(scrollPercentage > 0.6 && scrollPercentage < 0.95){
 		feature2.style.backgroundColor = "#373E56";
 		feature3.style.backgroundColor = "white";
 		feature4.style.backgroundColor = "#373E56";
@@ -44,7 +43,7 @@ function makewhite(){
 		contentC.style.color = "#373E56";
 
 	}
-	if((docscroll > phone4)){
+	if((scrollPercentage > 0.95)){
 		feature3.style.backgroundColor = "#373E56";
 		feature4.style.backgroundColor = "white";
 		contentC.style.color = "white";
@@ -60,9 +59,5 @@ function mewhite(string){
 	document.getElementById(string).style.backgroundColor ="white";
 }
 
-function thanksForTheForm(){
-	var user = document.getElementById("nameofSub");
-	alert("Thank you for your feedback "+ user + ".");
-}
 
 
