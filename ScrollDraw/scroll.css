@@ -1,38 +1,113 @@
 body {
     /* feel free to change height */
-    height: 2400px;
     background: linear-gradient(
       to bottom,
       #101832,
       #152455
     );
-  }
-  
-  h1 {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    margin: 0px;
+    margin:auto;
+    max-width: 1300px;
+}
+#header{
+    width: 100%;
+    height: 1577px;
+    background: url("Vector.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#vexi_logo{
+    width: 50px;
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#menu{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.buttonstyle{
+	font-size: 20px;
+    color: black;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    cursor: pointer;
+    border: 2px solid #fecb00;
+    margin: 5px;
+}
+.buttonstyle:hover{
+    border: 2px solid #ffe16c;
+}
+.btnPrimary:hover{
+    background: #ffe16c;
+}
+.btnSecondary:hover{
+    color: #ffe16c;
+}
+.btnPrimary{
+    background: #fecb00;
+}
+.btnSecondary{
+    color: #fecb00;
+}
+
+#heading{
+    position: absolute;
+    top: 210px;
+    left: 240px;
+}
+
+#headerTxt{
+    color: #fdca00;
+    margin: 0px;
+    font-size: 150px;
+    /* font-family: 'Dosis', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+
+#subTitle{
+    color: #fecb00;
+    margin: 0px;
+    font-size: 40px;
+    /* font-family: 'Dosis', sans-serif; */
+    font-family: 'Lato', sans-serif;
     font-weight: 300;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 22px;
-    letter-spacing: 5px;
-    font-weight: 100;
-    padding: 25px 15px;
-    text-shadow: 1px 1px 1px #333;
-  }
+}
+
+#testmonials{
+    width:100%;
+    width: auto;
+    position: absolute; 
+    top: 1000px;
+    left: 200px;
+}
+.testmonial{
+    background: url(Group.png);
+    width: 450px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    float: left;
+    margin: 10px;
+}
   
  .star-svg {
     right: 0;
     width: 100%;
     position: absolute;
-    top: 360px;
-  }
-
-  
+}
+ 
 #steps {
     width: 620px;
     margin: auto;
-    margin-top: 280px;
+    /* margin-top: 1200px; */
 }
 
 img{

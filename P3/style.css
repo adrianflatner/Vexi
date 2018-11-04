@@ -32,7 +32,7 @@
 	color: black;
 }
 
-#buttin{
+.buttin{
 	background-color: transparent;
 	border:2px solid #FCC90E;
 	border-radius: 5px;
@@ -42,11 +42,11 @@
 	margin-right: 5px; 
 	padding: 5px;
 }
-#buttin:hover{
+.buttin:hover{
 	transform: scale(1.1);
 }
 
-#buttin:visited{
+.buttin:visited{
 	text-decoration: #FCC90E;
 }
 
