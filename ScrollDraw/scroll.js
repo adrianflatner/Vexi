@@ -12,7 +12,9 @@ path.style.transition = path.style.WebkitTransition =
 
 // When the page scrolls...
 window.addEventListener("scroll", function(e) {
- 
+
+  const scroller = document.getElementById('steps');
+  
   // What % down is it? 
   // https://stackoverflow.com/questions/2387136/cross-browser-method-to-determine-vertical-scroll-percentage-in-javascript/2387222#2387222
   // Had to try three or four differnet methods here. Kind of a cross-browser nightmare.
@@ -22,7 +24,6 @@ window.addEventListener("scroll", function(e) {
   document.getElementById("step2").className=(scrollPercentage > 0.25)?"visited":"";
   document.getElementById("step3").className=(scrollPercentage > 0.6)?"visited":"";
   document.getElementById("step4").className=(scrollPercentage > 0.95)?"visited":"";
-  
 
   // Length to offset the dashes
   var drawLength = pathLength * scrollPercentage;
@@ -40,3 +41,12 @@ window.addEventListener("scroll", function(e) {
   }
   
 });
+
+function scrolling(){
+  alert("SCROL")
+  let height = scroller.clientHeight;
+  let scrollHeight = scroller.scrollHeight - height;
+  let scrollTop = scroller.scrollTop;
+  let percent = Math.floor(scrollTop / scrollHeight * 100);
+  document.getElementById('percent').innerText = 'Percent : '+percent+'%';
+}

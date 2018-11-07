@@ -120,6 +120,9 @@ img{
     width:210px;
 }
 
+#step1{
+    top: -75px;
+}
 #step2{
     float:left; 
     margin-top: 500px; 
@@ -128,10 +131,16 @@ img{
 
 #step3{
     margin-top: 1200px;
-    margin-right: -240px;
+    margin-right: -300px;
 }
 #step4{
     float:left; 
-    margin-top: 1900px; 
-    margin-left: -140px
+    margin-top: 1840px;
+    margin-left: -200px;
+}
+
+#percent{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
