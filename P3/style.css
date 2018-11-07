@@ -186,11 +186,21 @@ label, input{
 
 .bck2{
 	width: 100%;
-	position: absolute;
+	position: fixed;
+	margin: auto;
+	background-repeat: no-repeat;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	z-index: -2;
+}
+
+.bodyForAbout{
+    background-image: url("backgroundRoad.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
 }
 
 
