@@ -206,13 +206,6 @@ label, input{
 	z-index: -2;
 }
 
-.bodyForAbout{
-    background-image: url("images/contact/backgroundRoad.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: auto;
-}
 
 /* Scrollergreia og telefonene på forsiden */
 
@@ -433,7 +426,7 @@ footer {
     height: 75px;
     position: absolute;
     top: 0px;
-    left: 50px;
+    left: 0px;
 }
 
 
