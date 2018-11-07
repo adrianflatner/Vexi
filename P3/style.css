@@ -81,13 +81,15 @@ p {
 }
 
 #contact, #vexi{
-	background-color: #FCC90E;
-	border:2px solid #FCC90E;
-	border-radius: 5px;
-	transition: transform .7s;
-	width: 45%;
-	margin-right: 5px;
-	padding: 5px;
+  background-color: #FCC90E;
+  border:2px solid #FCC90E;
+  border-radius: 5px;
+  transition: transform .7s;
+  width: 45%;
+  height: 100%;
+  margin-right: 1%; 
+  padding: 5px;
+  overflow: hidden;
 }
 
 #contact:hover{
@@ -99,14 +101,15 @@ p {
 }
 
 #buttin{
-	background-color: transparent;
-	border:2px solid #FCC90E;
-	border-radius: 5px;
-	transition: transform .7s;
-	width: 45%;
-	color:#FCC90E;
-	margin-right: 5px;
-	padding: 5px;
+  background-color: transparent;
+  border:2px solid #FCC90E;
+  border-radius: 5px;
+  transition: transform .7s;
+  width: 45%;
+  color:#FCC90E;
+  margin-right: 1%; 
+  padding: 5px;
+  overflow: hidden;
 }
 #buttin:hover{
 	transform: scale(1.1);
@@ -117,6 +120,7 @@ p {
 }
 
 .buttonstyle{
+  width: 100%;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 20px;
@@ -203,7 +207,7 @@ label, input{
 }
 
 .bodyForAbout{
-    background-image: url("backgroundRoad.png");
+    background-image: url("images/contact/backgroundRoad.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -265,40 +269,47 @@ label, input{
 
 
 /*Roadmap*/
+
+
 .wrap{
   position: relative;
-  height: 100%;
+  height: 50%;
   margin-top: 8%;
   margin-bottom: 10%;
   margin-left: 5%;
   z-index: -1;
-  border: 2px solid red;
-  padding-top: 20%;
-  padding-bottom: 20%;
 }
 
 #road1{
-	position: absolute;
-	top:11;
-	right: 0;
+  position: relative;
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 20%;
 }
 
 #road2{
-	position: absolute;
-	margin-left: 25%;
-	margin-top: 1%;
+  position: relative;
+  margin-left: 25%;
+  margin-top: 1%;
+  width: 20%;
 }
 
 #road3{
-	position: absolute;
-	margin-left: 30%;
-	margin-bottom: 1%;
+  position: relative;
+  margin-left:25%;
+  margin-bottom: 1%;
+  width: 20%;
 }
 
 #road4{
-	position: absolute;
-	margin-left: 20%;
-	margin-bottom: 1%;
+  position: relative;
+  margin-left: 20%;
+  margin-bottom: 1%;
+  width: 20%;
+}
+
+#TheRoad{
+  width: 90%;
 }
 
 
@@ -423,4 +434,55 @@ footer {
     position: absolute;
     top: 0px;
     left: 50px;
+}
+
+
+/*Mobile version*/
+@media all and (max-width: 800px) {
+.scroller{
+  display: none;
+}
+.buttonstyle{
+  font-size: 60%;
+  padding: 0;
+}
+
+#contact{ 
+padding: 0;
+float: right;
+}
+
+#buttin{
+  padding: 0;
+  float: left;
+}
+
+#buttonCluster{
+  margin-left: 70%;
+}
+
+.wrap{
+  margin-top: 15%;
+  width: 70%;
+}
+
+.star-svg{
+  display: none;
+}
+
+#steps {
+width: 70%;
+padding-bottom: 50%;
+margin-top: 10%;
+}
+
+#step1, #step2,#step3,#step4{
+margin: 0 0;
+width: 100%;
+position: relative;
+float: none;
+transition: none;
+margin-top: 40%;
+margin-bottom: 40%;
+}
 }
