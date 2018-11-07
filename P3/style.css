@@ -184,17 +184,6 @@ label, input{
 	z-index: -2;
 }
 
-.bck2{
-	width: 100%;
-	position: fixed;
-	margin: auto;
-	background-repeat: no-repeat;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	z-index: -2;
-}
-
 .bodyForAbout{
     background-image: url("backgroundRoad.png");
     background-repeat: no-repeat;
@@ -266,12 +255,15 @@ body {
   margin-bottom: 10%;
   margin-left: 5%;
   z-index: -1;
+  border: 2px solid red;
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 
 #road1{
 	position: absolute;
-	margin-left: 5%;
-	margin-top: 1%;
+	top:11;
+	right: 0;
 }
 
 #road2{
