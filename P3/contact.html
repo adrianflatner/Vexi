@@ -1,70 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="contact.css">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
 
-  <title> Contact </title>
-</head>
-<body>
-  <div class = "bnHome"></div>
-	<!-- <img class = "bck" src="images/contact/backgroundRoad.png"> -->
-	<div id="buttonCluster">
-		<button id ="vexi"><a class ="buttonstyle" id = "vexi" href="index.html">Vexi</a></button>
-    <!-- hva med å ha logoen til vexi som knapp? -->
-		<button id ="buttin"><a class ="buttonstyle" id="roadmap" href="roadmap.html">Roadmap</a></button>
-	</div>
+    <title> Contact </title>
+  </head>
+  <body>
+    <div class = "btnHome"></div>
+    <!-- <img class = "bck" src="images/contact/backgroundRoad.png"> -->
+    <div id="buttonCluster">
+      <button class = "mainBtnStyle"><a href="index.html">Vexi</a></button>
+      <!-- hva med å ha logoen til vexi som knapp? -->
+      <button class = "secondaryBtnStyle"><a href="roadmap.html">Roadmap</a></button>
+    </div>
 
-<p class = "intro">
-  Andreas Ore Larssen is the creator and owner of Vexi, an application that makes it easy and legal to find friends that can give you a ride.
-  There are mainly two ways to reach the Vexi team. Either you can reach out to Andreas directly, using the contact information below,
-  or you can use the form, sending a message to customer service.
-</p>
+  <p class = "intro">
+    Andreas Ore Larssen is the creator and owner of Vexi, an application that makes it easy and legal to find friends that can give you a ride.
+    There are mainly two ways to reach the Vexi team. Either you can reach out to Andreas directly, using the contact information below,
+    or you can use the form, sending a message to customer service.
+  </p>
 
-<ul id = "contactInfo">
-  <li>Email Address: andreas.ore.larsen@supermail.com</li> <br>
-  <li>Phone Number: 45678923</li> <br>
-  <li>Address: NTNU</li>
-</ul>
+  <ul id = "contactInfo">
+    <li>Email Address: andreas.ore.larsen@supermail.com</li> <br>
+    <li>Phone Number: 45678923</li> <br>
+    <li>Address: NTNU</li>
+  </ul>
 
-<img src="images/contact/andreasol.png" id="owner" alt="andreas">
+  <img src="images/contact/andreasol.png" id="owner" alt="andreas">
 
-		<div id="formstad">
-	      <form id = "theContact" onsubmit="return thanksForTheForm(nameOfSub, emailName)">
-  				<label>NAME</label><br>
-  				<input type="text" placeholder="Name" id="nameOfSub" name="name" required><br><br>
-  				<label>E-MAIL</label><br>
-  				<input type="email" placeholder="Email" id="emailName" name="email" required><br><br>
-  				<label>MESSAGE</label>
-			  </form>
-  			<textarea rows="8" placeholder="Write your message here.."></textarea form="theContact"><br>
-  			<input type="submit" value="Send" class = "submit" form ="theContact"><br>
-		</div>
-    <script type="text/javascript" src = "formFeedback.js"></script>
+      <div id="formstad">
+          <form id = "theContact" onsubmit="return thanksForTheForm(nameOfSub, emailName)">
+            <label>Name</label><br>
+            <input type="text" placeholder="Name" id="nameOfSub" name="name" required><br><br>
+            <label>E-mail</label><br>
+            <input type="email" placeholder="Email" id="emailName" name="email" required><br><br>
+            <label>Message</label>
+          </form>
+          <textarea rows="8" placeholder="Write your message here.."></textarea form="theContact"><br>
+          <input type="submit" value="Send" class = "submit" form ="theContact"><br>
+      </div>
+      <script type="text/javascript" src = "formFeedback.js"></script>
 
-<section>
-    <h2> How do I apply for a job at Vexi? </h2>
-    <p>
-  <!-- In addition, a form or email for how to apply for jobs within Vexi, will be added.-->
-  Vexi are looking for curious people, eager to help out! If this is you, follow the three steps below.
-    </p>
-</section>
+  <section>
+      <h2> How do I apply for a job at Vexi? </h2>
+      <p>
+    <!-- In addition, a form or email for how to apply for jobs within Vexi, will be added.-->
+    Vexi are looking for curious people, eager to help out! If this is you, follow the three steps below.
+      </p>
+  </section>
 
-<div id="apply">
-    <ul id = "applySteps">
-      <li id = "emailPrep"> 1. Prepare an email to andreas.ore.larsen@supermail.com</li>
-      <br>
-      <li id = "emailContent"> 2. In the email, write a short paragraph containing reasons to why you want to work at Vexi, and why we need you as one of our dear employees</li>
-      <br>
-      <li id = "emailSend"> 3. Attach your resume and hit send!</li>
-      <br>
-    </ul>
-</div>
+  <div id="apply">
+      <ul id = "applySteps">
+        <li id = "emailPrep"> 1. Prepare an email to andreas.ore.larsen@supermail.com</li>
+        <br>
+        <li id = "emailContent"> 2. In the email, write a short paragraph containing reasons to why you want to work at Vexi, and why we need you as one of our dear employees</li>
+        <br>
+        <li id = "emailSend"> 3. Attach your resume and hit send!</li>
+        <br>
+      </ul>
+  </div>
 
-<br>
+  <br>
 
-<footer>dette er en footer</footer>
-
-</body>
+  </body>
 </html>
