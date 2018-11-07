@@ -1,3 +1,13 @@
+body {
+    /* feel free to change height */
+    background: linear-gradient(
+      to bottom,
+      #101832,
+      #152455
+	);
+	font-family: 'Lato', sans-serif;
+}
+
 
 /*Side-scroller. Den greia på siden som blir hvit når du går nedover  */
 #contentA{
@@ -192,17 +202,8 @@ label, input{
     margin: auto;
 }
 
-
-
 /* Scrollergreia og telefonene på forsiden */
-body {
-    /* feel free to change height */
-    background: linear-gradient(
-      to bottom,
-      #101832,
-      #152455
-    );
-  }
+
   
  .star-svg {
     right: 0;
@@ -215,7 +216,8 @@ body {
 #steps {
     width: 620px;
     margin: auto;
-    margin-top: 200px;
+	margin-top: 200px;
+	margin-bottom: 50px;
 }
 
 #step1, #step2,#step3,#step4{
