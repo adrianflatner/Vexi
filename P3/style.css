@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     color: white;
     text-transform: uppercase;
@@ -20,7 +20,19 @@ h1 {
     padding: 25px 15px;
     text-shadow: 1px 1px 1px #333;
 }
+h2 {
+	color: #FCC90E
+}
 
+p {
+	color: white;
+
+	line-height: 2
+  }
+  section {
+	text-align:center;
+  }
+  
 
 /*Side-menu. */
 
@@ -44,7 +56,7 @@ h1 {
 	border-radius: 5px;
 	margin: 7px;
 	width: 100%;
-	height: 10%;	
+	height: 10%;
 }
 
 /* Change color of selected a-font */
@@ -68,13 +80,13 @@ h1 {
   	width: 25%;
 }
 
-#contact{
+#contact, #vexi{
 	background-color: #FCC90E;
 	border:2px solid #FCC90E;
 	border-radius: 5px;
 	transition: transform .7s;
 	width: 45%;
-	margin-right: 5px; 
+	margin-right: 5px;
 	padding: 5px;
 }
 
@@ -93,7 +105,7 @@ h1 {
 	transition: transform .7s;
 	width: 45%;
 	color:#FCC90E;
-	margin-right: 5px; 
+	margin-right: 5px;
 	padding: 5px;
 }
 #buttin:hover{
@@ -154,7 +166,7 @@ input, textarea{
 }
 
 label, input{
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     color: white;
     text-transform: uppercase;
@@ -200,7 +212,7 @@ label, input{
 
 /* Scrollergreia og telefonene på forsiden */
 
-  
+
  .star-svg {
     right: 0;
     width: 100%;
@@ -208,7 +220,7 @@ label, input{
     top: 360px;
   }
 
-  
+
 #steps {
     width: 620px;
     margin: auto;
@@ -228,8 +240,8 @@ label, input{
 }
 
 #step2{
-    float:left; 
-    margin-top: 450px; 
+    float:left;
+    margin-top: 450px;
     margin-left: -80px
 }
 
@@ -238,8 +250,8 @@ label, input{
     margin-right: -240px;
 }
 #step4{
-    float:left; 
-    margin-top: 1900px; 
+    float:left;
+    margin-top: 1900px;
     margin-left: -140px
 }
 
@@ -287,4 +299,117 @@ label, input{
 	position: absolute;
 	margin-left: 20%;
 	margin-bottom: 1%;
+}
+
+
+/* CONTACT */
+/* ------------ */
+.intro{
+	margin-left:7%;
+	margin-right:30%;
+	text-align:left;
+}
+
+#contactInfo {
+	margin-left:7%;
+	width: 60%;
+	padding:50px;
+  }
+#contactInfo li{
+	color: white;
+}
+  
+/*how to apply*/
+#apply ul#applySteps {
+    margin-left:25%;
+    width: 50%
+}
+#applySteps li {
+    font-size:17px;
+    color: white;
+    padding:8px;
+}
+#applySteps li#emailPrep {
+    list-style-image:url(images/contact/ringemail.png);
+    list-style-position:outside;
+    color: white
+}
+#applySteps li#emailContent {
+    list-style-image:url(images/contact/ringempl.png);
+    list-style-position:outside;
+    color: white
+}
+#applySteps li#emailSend {
+    list-style-image:url(images/contact/ringsend.png);
+    list-style-position:outside;
+    color: white
+}
+
+
+/* TODO: FIKS dette  */
+
+.bck {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+}
+
+#owner {
+  margin-left:9%;
+  margin-right:30%;
+}
+
+#formstad{
+  position: relative;
+  height: 200%;
+  margin-left: 40%;
+  margin-right: -4%;
+  margin-top: -38%;
+  text-align: center;
+  margin-bottom: 15%
+}
+
+input, textarea{
+	  width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border-color: white;
+    border-width: medium;
+    background-color: #101832
+
+}
+
+label{
+	color: #FCC90E;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.submit{
+	background-color: #FCC90E;
+	border:2px solid #FCC90E;
+	border-radius: 5px;
+	transition: transform .2s;
+	padding: 5px;
+  font-size: 15px
+
+}
+
+.submit:hover{
+	transform: scale(1.1);
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:30px;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
