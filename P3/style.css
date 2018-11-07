@@ -245,6 +245,13 @@ body {
     margin-left: -140px
 }
 
+#step1.visited{
+	content:url("images/index/steps/step1_visited.svg");
+}
+#step2.visited{
+	content:url("images/index/steps/step2_visited.svg");
+}
+
 
 
 /*Roadmap*/
@@ -301,45 +308,3 @@ body {
 
 
 
-
-/*
-.div1{
-	top:-2%;
-	position: absolute;
-	right: 0;
-	width: 20%;
-	
-}
-
-.div2{
-	top: 30%;
-	position: absolute;
-	left: -10%;
-	width: 20%;
-}
-
-.div3{
-	top: 67%;
-	position: absolute;
-	left: 88%;
-	width: 20%;
-}
-
-.div4{
-	bottom: -2%;
-	position: absolute;
-	left: -5%;
-	width: 20%;
-}
-
-
-.phone{
-	width: 100%;
-	
-}
-
-
-.vector{
-	width: 100%;
-	top: 10px;
-}
