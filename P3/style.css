@@ -413,3 +413,14 @@ footer {
     color: white;
     text-align: center;
 }
+
+.btnHome{
+    background: url(images/homeBtn.svg);
+    background-repeat: no-repeat;
+    background-size: 276px;
+    width:276px;
+    height: 75px;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
