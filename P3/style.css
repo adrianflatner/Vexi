@@ -1,18 +1,15 @@
 body {
-    /* feel free to change height */
     background: linear-gradient(
       to bottom,
       #101832,
       #152455
 	);
 	font-family: 'Lato', sans-serif;
+	margin: 0px;
 }
 
 
-/*Side-scroller. Den greia på siden som blir hvit når du går nedover  */
-#contentA{
-	color: #373E56;
-}
+/*Side-menu. */
 
 .scroller{
 	position: fixed;
@@ -25,44 +22,31 @@ body {
 }
 
 .features{
-	color: white;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	margin-left: 20%;
 	text-decoration: none;
+	color: white;
 }
 .feature{
+	background-color: #373E56;
+	border-radius: 5px;
+	margin: 7px;
+	width: 100%;
+	height: 10%;	
+}
+
+/* Change color of selected a-font */
+.selected a.features{
+	color: #373E56;
+}
+
+.feature.selected{
 	background-color: white;
-	border-radius: 5px;
-	margin: 7px;
-	width: 100%;
-	height: 10%;
-}
-.feature2{
-	background-color: #373E56;
-	border-radius: 5px;
-	margin: 7px;
-	width: 100%;
-	height: 10%;
-}
-.feature3{
-	background-color: #373E56;
-	border-radius: 5px;
-	margin: 7px;
-	width: 100%;
-	height: 10%;
-}
-.feature4{
-	background-color: #373E56;
-	border-radius: 5px;
-	margin: 7px;
-	width: 100%;
-	height: 10%;
+	color: #373E56;
 }
 
 
 
-
-/* Knapper til alle sider*/
+/* Buttons*/
 #buttonCluster{
 	position: relative;
 	margin-left: 75%;
