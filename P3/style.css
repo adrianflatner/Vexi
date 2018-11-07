@@ -1,11 +1,58 @@
 
+/*Side-scroller. Den greia på siden som blir hvit når du går nedover  */
+#contentA{
+	color: #373E56;
+}
+
+.scroller{
+	position: fixed;
+	height: 25%;
+	width: 15%;
+	margin-left: 82%;
+	margin-right: 5%;
+	top: 47%;
+	z-index: 1;
+}
+
 .features{
 	color: white;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	margin-left: 20%;
 	text-decoration: none;
 }
+.feature{
+	background-color: white;
+	border-radius: 5px;
+	margin: 7px;
+	width: 100%;
+	height: 10%;
+}
+.feature2{
+	background-color: #373E56;
+	border-radius: 5px;
+	margin: 7px;
+	width: 100%;
+	height: 10%;
+}
+.feature3{
+	background-color: #373E56;
+	border-radius: 5px;
+	margin: 7px;
+	width: 100%;
+	height: 10%;
+}
+.feature4{
+	background-color: #373E56;
+	border-radius: 5px;
+	margin: 7px;
+	width: 100%;
+	height: 10%;
+}
 
+
+
+
+/* Knapper til alle sider*/
 #buttonCluster{
 	position: relative;
 	margin-left: 75%;
@@ -62,6 +109,26 @@
 	color: #FCC90E;
 }
 
+
+
+/*Logo */
+
+#logo{
+	background-color: transparent;
+	position: absolute;
+	margin-left: 2%;
+	transition: transform 1s;
+}
+
+#logo:hover{
+	transform: scale(1.5);
+}
+
+
+
+
+/*Form */
+
 #formstad{
   position: relative;
   height: 200%;
@@ -105,60 +172,9 @@ label, input{
 	transform: scale(1.1);
 }
 
-#logo{
-	position: absolute;
-	margin-left: 2%;
-	transition: transform 1s;
-}
-
-#logo:hover{
-	transform: scale(1.5);
-}
-
-#contentA{
-	color: #373E56;
-}
-
-.scroller{
-	position: fixed;
-	height: 25%;
-	width: 15%;
-	margin-left: 82%;
-	margin-right: 5%;
-	top: 47%;
-	z-index: 1;
-}
-
-.feature{
-	background-color: white;
-	border-radius: 5px;
-	margin: 7px;
-	width: 100%;
-	height: 10%;
 
 
-}
-.feature2{
-	background-color: #373E56;
-	border-radius: 5px;
-	margin: 7px;
-	width: 100%;
-	height: 10%;
-}
-.feature3{
-	background-color: #373E56;
-	border-radius: 5px;
-	margin: 7px;
-	width: 100%;
-	height: 10%;
-}
-.feature4{
-	background-color: #373E56;
-	border-radius: 5px;
-	margin: 7px;
-	width: 100%;
-	height: 10%;
-}
+/*Bakgrunner*/
 
 .bck{
 	width: 100%;
@@ -177,6 +193,9 @@ label, input{
 	z-index: -2;
 }
 
+
+
+/* Scrollergreia og telefonene på forsiden */
 body {
     /* feel free to change height */
     background: linear-gradient(
@@ -185,20 +204,6 @@ body {
       #152455
     );
   }
-  
-  h1 {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-weight: 300;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 22px;
-    letter-spacing: 5px;
-    font-weight: 100;
-    padding: 25px 15px;
-    text-shadow: 1px 1px 1px #333;
-  }
-
   
  .star-svg {
     right: 0;
@@ -222,7 +227,7 @@ body {
 }
 
 #step1:hover,#step2:hover,#step3:hover,#step4:hover{
-   	transform:  scale(1.7);
+   	transform:  scale(1.4);
 }
 
 #step2{
@@ -241,6 +246,9 @@ body {
     margin-left: -140px
 }
 
+
+
+/*Roadmap*/
 .wrap{
   position: relative;
   height: 100%;
@@ -251,32 +259,46 @@ body {
 }
 
 #road1{
+	position: absolute;
 	margin-left: 5%;
 	margin-top: 1%;
-	transition: transform 1s;
 }
 
 #road2{
+	position: absolute;
 	margin-left: 25%;
 	margin-top: 1%;
-	transition: transform 1s;
 }
 
 #road3{
+	position: absolute;
 	margin-left: 30%;
 	margin-bottom: 1%;
-	transition: transform 1s;
 }
 
 #road4{
+	position: absolute;
 	margin-left: 20%;
 	margin-bottom: 1%;
-	transition: transform 1s;
 }
 
-#road1:hover,#road2:hover,#road3:hover,#road4:hover{
-   	transform:  scale(1.1);
-}
+
+/* DIV */
+  h1 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    padding: 25px 15px;
+    text-shadow: 1px 1px 1px #333;
+  }
+
+
+
 
 /*
 .div1{
