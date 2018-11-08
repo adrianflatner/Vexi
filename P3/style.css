@@ -1,8 +1,5 @@
 body {
-    background: linear-gradient(
-      to bottom,
-      #101832,
-      #152455
+    background-color:#152455;
 	);
 	font-family: 'Lato', sans-serif;
 	margin: 0px;
@@ -262,8 +259,6 @@ label, input{
 
 
 /*Roadmap*/
-
-
 .wrap{
   position: relative;
   height: 50%;
@@ -276,7 +271,7 @@ label, input{
 #road1{
   position: relative;
   margin-left: 5%;
-  margin-top: 1%;
+  margin-bottom: 1%;
   width: 20%;
 }
 
@@ -297,7 +292,7 @@ label, input{
 #road4{
   position: relative;
   margin-left: 20%;
-  margin-bottom: 1%;
+  margin-top: 1%;
   width: 20%;
 }
 
@@ -372,7 +367,7 @@ label, input{
   margin-right: -4%;
   margin-top: -38%;
   text-align: center;
-  margin-bottom: 15%
+  margin-bottom: 15%;
 }
 
 input, textarea{
@@ -383,7 +378,7 @@ input, textarea{
     border-radius: 7px;
     border-color: white;
     border-width: medium;
-    background-color: #101832
+    background-color: #101832;
 
 }
 
@@ -408,14 +403,15 @@ label{
 }
 
 footer {
-    position: relative;
-    left: 0;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height:30px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+    font-size: 80%;
     text-align: center;
+    padding-top: 1%;
 }
 
 .btnHome{
@@ -432,9 +428,8 @@ footer {
 
 /*Mobile version*/
 @media all and (max-width: 800px) {
-.scroller{
-  display: none;
-}
+
+/*Buttons*/
 .buttonstyle{
   font-size: 60%;
   padding: 0;
@@ -454,11 +449,19 @@ float: right;
   margin-left: 70%;
 }
 
+/*Roadmap*/
+
 .wrap{
-  margin-top: 15%;
-  width: 70%;
+  margin-top: 45%;
+  margin-left: 15%;
+  width: 100%;
+  transform: rotate(90deg);
 }
 
+/*Index*/
+.scroller{
+  display: none;
+}
 .star-svg{
   display: none;
 }
@@ -472,10 +475,13 @@ margin-top: 10%;
 #step1, #step2,#step3,#step4{
 margin: 0 0;
 width: 100%;
-position: relative;
 float: none;
 transition: none;
 margin-top: 40%;
 margin-bottom: 40%;
+}
+
+#step1:hover,#step2:hover,#step3:hover,#step4:hover{
+    transform:  none;
 }
 }
