@@ -264,16 +264,17 @@ label, input{
   height: 50%;
   margin-top: 8%;
   margin-bottom: 10%;
-  z-index: -1;
+
 }
 
 .Queue{
     display:inline-block;
     min-width: 270px;
+    transition: transform .7s;
 }
 
 .Queue:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 
 }
 
@@ -317,7 +318,7 @@ label, input{
 #road2{
   position: relative;
   margin-left: 25%;
-  margin-top: 1%;
+  margin-top: 2%;
   width: 20%;
 }
 
@@ -331,7 +332,7 @@ label, input{
 #road4{
   position: relative;
   margin-left: 20%;
-  margin-top: 1%;
+  margin-top: 2%;
   width: 20%;
 }
 
