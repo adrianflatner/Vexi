@@ -272,6 +272,11 @@ label, input{
     min-width: 270px;
 }
 
+.Queue:hover{
+    transform: scale(1.1);
+
+}
+
 .marker{
     text-align: center;
     color: black;
