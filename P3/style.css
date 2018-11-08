@@ -264,8 +264,42 @@ label, input{
   height: 50%;
   margin-top: 8%;
   margin-bottom: 10%;
-  margin-left: 5%;
   z-index: -1;
+}
+
+.Queue{
+    display:inline-block;
+    min-width: 270px;
+}
+
+.marker{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    width:50%;
+    float:left;
+}
+
+.markerTextUp{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+
+}
+
+.markerTextDown{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.roadText{
+    width:50%;
+    float:right;
+    color:white;
 }
 
 #road1{
@@ -297,7 +331,7 @@ label, input{
 }
 
 #TheRoad{
-  width: 90%;
+  width:100%;
 }
 
 
