@@ -1,5 +1,15 @@
 //Inspired CSS-tricks-Scroll Drawing: https://css-tricks.com/scroll-drawing/?fbclid=IwAR1aq3enUu3jn1lcvCzbW6bRMoV2iClPHJYRSZSigVNpuf4wtWTygQpfxEI
 
+
+//Check if the screen is in mobile size. If it is disable the animation.
+var w = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+if(w<990){
+  document.getElementById("step1").className="visited";
+  document.getElementById("step2").className="visited";
+  document.getElementById("step3").className="visited";
+  document.getElementById("step4").className="visited";
+}
+
 // Get a reference to the roadsvg
 var road = document.querySelector('#star-path');
 
@@ -18,11 +28,19 @@ window.addEventListener("scroll", function(e) {
   // What % of the page is scrolled? 
   var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
   
+  if (scrollPercentage > 0.62){
+    scrollPercentage *=0.95;
+  }
+  
   //When scrolling passed, the image will get the class visited
+  if(w > 990){
   document.getElementById("step1").className=(scrollPercentage > 0.01)?"visited":"";
   document.getElementById("step2").className=(scrollPercentage > 0.27)?"visited":"";
   document.getElementById("step3").className=(scrollPercentage > 0.62)?"visited":"";
-  document.getElementById("step4").className=(scrollPercentage > 0.95)?"visited":"";
+  document.getElementById("step4").className=(scrollPercentage > 0.94)?"visited":"";
+  }
+
+
 
   // Length to offset the dashes
   var drawLength = pathLength * scrollPercentage;
