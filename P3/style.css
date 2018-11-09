@@ -263,7 +263,12 @@ label, input{
 #step2.visited{
 	content:url("images/index/steps/step2_visited.svg");
 }
-
+#step3.visited{
+  content:url("images/index/steps/step1_visited.svg");
+}
+#step4.visited{
+  content:url("images/index/steps/step2_visited.svg");
+}
 
 
 /*Roadmap*/
@@ -527,7 +532,7 @@ footer {
 
 
 /*Mobile version*/
-@media all and (max-width: 600px) {
+@media all and (max-width: 820px) {
 
 /*Buttons*/
 .buttonstyle{
