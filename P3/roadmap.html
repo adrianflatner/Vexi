@@ -5,23 +5,47 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>About</title>
 </head>
-<body>
+<body onresize="changeOrder()">
 	<div class = "btnHome"></div>
 	<div id="buttonCluster">
 		<button id ="contact"><a class ="buttonstyle primary" id = "contact" href="contact.html">Contact</a></button>
 		<button id ="buttin"><a class ="buttonstyle" id="roadmap" href="roadmap.html">Roadmap</a></button>
 	</div>
-	<div class = "wrap">				
-		<img id ="road1" src="images/roadmap/road1.svg">
-		<img id ="road3" src="images/roadmap/road3.svg">					
-		<img id ="TheRoad" src="images/roadmap/vector2.svg">
-		<img id ="road2" src="images/roadmap/road2.svg">
-		<img id ="road4" src="images/roadmap/road4.svg">	
+	<div class = "wrap">
+		<div id="road1" class="Queue">
+			<div class="marker">
+				<img class="roadImage" src="images/roadmap/Ellipse1.svg">
+				<div class="markerTextUp">Q1</div>
+			</div>
+			<div class="roadText"><h2>Some title</h2><p>Some information<br>Some more info</p></div>
+		</div>
+		<div id="road3" class="Queue">
+			<div class="marker">
+				<img class="roadImage" src="images/roadmap/Ellipse3.svg">
+				<div class="markerTextUp">Q3</div>
+			</div>
+			<div class="roadText"><h2>Some title</h2><p>Some information<br>Some more info</p></div>
+		</div>
 
+			<img id="TheRoad" src="images/roadmap/vector2.svg">
+
+		<div id="road2" class="Queue">
+			<div class="marker">
+				<img class="roadImage2" src="images/roadmap/Ellipse2.svg">
+				<div class="markerTextDown"><b>Q2</b></div>
+			</div>
+			<div class="roadText"><h2>Some title</h2><p>Some information<br>Some more info</p></div>
+		</div>
+		<div id="road4" class="Queue">
+			<div class="marker">
+				<img class="roadImage2" src="images/roadmap/Ellipse4.svg">
+				<div class="markerTextDown">Q4</div>
+			</div>
+			<div class="roadText"><h2>Some title</h2><p>Some information<br>Some more info</p></div>
+		</div>
 	</div>
 
 	<footer>Made by WebYo</footer>
-
-	<script type="text/javascript" src = "vexi2.js"></script>
+	<script src="scripts/roadmap.js"></script>
 </body>
 </html>

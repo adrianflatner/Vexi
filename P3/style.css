@@ -3,6 +3,8 @@ body {
 	);
 	font-family: 'Lato', sans-serif;
 	margin: 0px;
+
+overflow-x: hidden;
 }
 
 h1 {
@@ -43,6 +45,12 @@ p {
 	z-index: 1;
 }
 
+@media all and (max-width: 930px){
+  .scroller{
+    display: none;
+  }
+}
+
 .features{
 	margin-left: 20%;
 	text-decoration: none;
@@ -77,7 +85,7 @@ p {
   	width: 25%;
 }
 
-#contact, #vexi{
+#contact, #vexi, #buttin{
   background-color: #FCC90E;
   border:2px solid #FCC90E;
   border-radius: 5px;
@@ -264,8 +272,49 @@ label, input{
   height: 50%;
   margin-top: 8%;
   margin-bottom: 10%;
-  margin-left: 5%;
-  z-index: -1;
+  min-width:990px;
+
+}
+
+.Queue{
+    display:inline-block;
+    min-width: 270px;
+    transition: transform .7s;
+}
+
+.Queue:hover{
+    transform: scale(1.2);
+
+}
+
+.marker{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    width:50%;
+    float:left;
+}
+
+.markerTextUp{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+
+}
+
+.markerTextDown{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.roadText{
+    width:50%;
+    float:right;
+    color:white;
 }
 
 #road1{
@@ -278,7 +327,7 @@ label, input{
 #road2{
   position: relative;
   margin-left: 25%;
-  margin-top: 1%;
+  margin-top: 2%;
   width: 20%;
 }
 
@@ -292,14 +341,65 @@ label, input{
 #road4{
   position: relative;
   margin-left: 20%;
-  margin-top: 1%;
+  margin-top: 2%;
   width: 20%;
 }
 
 #TheRoad{
-  width: 90%;
+  width:100%;
 }
 
+
+/*Roadmap mobile version  */
+@media all and (max-width: 990px){
+  .wrap{
+  margin-left: 5%;
+  width: 60%;
+  min-width:0;
+  margin-top: 30%;
+}
+
+#road1, #road2, #road3, #road4{
+    position: relative;
+    margin-left:45%;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    width: 20%;
+}
+
+#road1{
+    margin-top: 12%;
+}
+
+#TheRoad{
+    transform: rotate(90deg);
+    margin-left:-350px;
+    min-width: 800px;
+}
+
+.Queue:hover{
+  transform: none;
+}
+
+.roadImage{
+    transform: rotate(90deg);
+}
+ .roadImage2{
+    transform: rotate(270deg);
+}
+ .markerTextUp{
+    top: 50%;
+    left: 25%;
+}
+ .markerTextDown{
+    top: 50%;
+    left: 25%;
+}
+ .marker{
+    width:40%;
+
+}
+}
 
 /* CONTACT */
 /* ------------ */
@@ -403,7 +503,7 @@ label{
 }
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     height:30px;
@@ -427,7 +527,7 @@ footer {
 
 
 /*Mobile version*/
-@media all and (max-width: 800px) {
+@media all and (max-width: 600px) {
 
 /*Buttons*/
 .buttonstyle{
@@ -435,28 +535,77 @@ footer {
   padding: 0;
 }
 
-#contact{ 
-padding: 0;
-float: right;
-}
-
-#buttin{
-  padding: 0;
-  float: left;
+#buttonCluster{
+  margin-left: 60%;
 }
 
 #buttonCluster{
-  margin-left: 70%;
+  position: relative;
+  margin-left: 75%;
+  margin-right: 5%;
+  margin-top: 4%;
+  width: 25%;
 }
 
-/*Roadmap*/
+#vexi:hover, #buttin:hover, #contact:hover{
+  transform: none;
+}
 
-.wrap{
-  margin-top: 45%;
-  margin-left: 15%;
+
+
+/*Roadmap  Har egen versjon ved lengere opp*/
+
+
+
+/* Contact */
+#formstad{
+  margin-top: 20%;
   width: 100%;
-  transform: rotate(90deg);
+  margin-left: 0;
 }
+
+#owner{
+  width: 50%;
+  margin-left: 20%;
+}
+
+.intro{
+  margin-top:10%;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+
+#contactInfo {
+  width: 30%;
+}
+
+#applyForjob{
+  width: 80%;
+  margin-left: 10%;
+}
+
+#apply ul#applySteps {
+  width: 40%
+}
+#applySteps li#emailPrep {
+    list-style-image:none;
+    list-style-position:outside;
+    color: white;
+    margin-left: -30%;
+}
+#applySteps li#emailContent {
+    list-style-image:none;
+    list-style-position:outside;
+    color: white;
+    margin-left: -30%;
+}
+#applySteps li#emailSend {
+    list-style-image:none;
+    list-style-position:outside;
+    color: white;
+    margin-left: -30%;
+}
+
 
 /*Index*/
 .scroller{
