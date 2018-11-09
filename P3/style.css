@@ -264,6 +264,7 @@ label, input{
   height: 50%;
   margin-top: 8%;
   margin-bottom: 10%;
+  min-width:990px;
 
 }
 
@@ -492,10 +493,27 @@ float: right;
 /*Roadmap*/
 
 .wrap{
-  margin-top: 45%;
   margin-left: 15%;
   width: 100%;
-  transform: rotate(90deg);
+  min-width:0;
+}
+
+#road1, #road2, #road3, #road4{
+    position: relative;
+    margin-left:25%;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    width: 20%;
+}
+
+#road1{
+    margin-top: 12%;
+}
+
+#TheRoad{
+    transform: rotate(90deg);
+    margin-left:-350px;
+    min-width: 800px;
 }
 
 /*Index*/
