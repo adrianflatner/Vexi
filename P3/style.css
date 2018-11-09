@@ -496,6 +496,30 @@ float: right;
   margin-left: 15%;
   width: 100%;
   min-width:0;
+  max-width: 800px;
+}
+
+.roadImage{
+    transform: rotate(90deg);
+}
+
+.roadImage2{
+    transform: rotate(270deg);
+}
+
+
+.markerTextUp{
+    top: 50%;
+    left: 25%;
+}
+
+.markerTextDown{
+    top: 50%;
+    left: 25%;
+}
+
+.marker{
+    width:40%;
 }
 
 #road1, #road2, #road3, #road4{
