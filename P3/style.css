@@ -35,9 +35,9 @@ section {
 /*Side-menu. */
 
 .scroller{
+  overflow: hidden;
   position: fixed;
-  float:right;
-	margin-right: 5%;
+  margin-left: 80%;
 	top: 40%;
 	z-index: 1;
 }
@@ -66,6 +66,8 @@ section {
 .selected span {
   color: black;
 }
+
+
 /* Buttons*/
 #buttonCluster{
   float: right;
