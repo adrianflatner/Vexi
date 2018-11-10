@@ -76,7 +76,7 @@ section {
 }
 
 
-.mainBtnStyle, .mainBtnStyle a {
+.mainBtnStyle, .mainBtnStyle{
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
@@ -94,7 +94,7 @@ section {
   text-decoration: none;
 }
 
-.mainBtnStyle:hover,.mainBtnStyle:hover > a{
+.mainBtnStyle:hover,.mainBtnStyle:hover{
   transform: scale(1.05);
   background-color: #FCFCFF;
   border:2px solid #FCFCFF;
@@ -131,7 +131,7 @@ section {
   overflow: hidden;
 }
 
-.secondaryBtnStyle a {
+.secondaryBtnStyle{
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 	color: #FCC90E;
