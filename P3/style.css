@@ -59,6 +59,7 @@ section {
 .feature span {
   color: white; 
   text-decoration: none;
+}
   
 @media all and (max-width: 930px){
   .scroller{
@@ -262,7 +263,7 @@ label, input{
   float:left;
   margin-top: 1925px;
   margin-left: -200px;
-
+}
 
 .stepContainer > img {
   transition: 0.35s; 
@@ -583,6 +584,7 @@ float: right;
 .wrap{
   margin-top: 15%;
   width: 70%;
+}
 
 #buttonCluster{
   margin-left: 60%;
