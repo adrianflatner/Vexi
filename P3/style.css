@@ -21,7 +21,7 @@ h1 {
   text-shadow: 1px 1px 1px #333;
 }
 h2 {
-	color: #FCC90E
+  color: #FCC90E
 }
 
 p {
@@ -31,7 +31,6 @@ p {
 section {
 	text-align:center;
 }
-
 
 /*Side-menu. */
 
@@ -60,6 +59,11 @@ section {
 .feature span {
   color: white; 
   text-decoration: none;
+  
+@media all and (max-width: 930px){
+  .scroller{
+    display: none;
+  }
 }
 
 
@@ -104,6 +108,13 @@ section {
 	transform: scale(1.05);
 }
 
+#contact:hover{
+  transform: scale(1.1);
+}
+
+#contact:visited{
+  color: black;
+}
 
 .secondaryBtnStyle{
   background-color: transparent;
@@ -127,7 +138,7 @@ section {
   text-decoration: none;
 }
 #btnRoadmap:hover{
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 
@@ -152,7 +163,7 @@ section {
 }
 
 input, textarea{
-	width: 100%;
+  width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -181,7 +192,7 @@ label, input{
 }
 
 .submit:hover{
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /*Backgrounds*/
@@ -251,12 +262,13 @@ label, input{
   float:left;
   margin-top: 1925px;
   margin-left: -200px;
-}
+
 
 .stepContainer > img {
   transition: 0.35s; 
 
 }
+
 
 .visited {
   transition: 0.35s;
@@ -271,10 +283,11 @@ label, input{
 #stepImg1.visited{
 	content:url("images/index/steps/step1_visited.svg");
 }
+  
 #stepImg2.visited{
 	content:url("images/index/steps/step2_visited.svg");
 }
-
+  
 #stepImg3.visited{
 	content:url("images/index/steps/step2_visited.svg");
 }
@@ -285,30 +298,68 @@ label, input{
 
 
 
-
 /*Roadmap*/
-
-
 .wrap{
   position: relative;
   height: 50%;
   margin-top: 8%;
   margin-bottom: 10%;
-  margin-left: 5%;
-  z-index: -1;
+  min-width:990px;
+
+}
+
+.Queue{
+    display:inline-block;
+    min-width: 270px;
+    transition: transform .7s;
+}
+
+.Queue:hover{
+    transform: scale(1.2);
+
+}
+
+.marker{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    width:50%;
+    float:left;
+}
+
+.markerTextUp{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+
+}
+
+.markerTextDown{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.roadText{
+    width:50%;
+    float:right;
+    color:white;
 }
 
 #road1{
   position: relative;
   margin-left: 5%;
-  margin-top: 1%;
+  margin-bottom: 1%;
   width: 20%;
 }
 
 #road2{
   position: relative;
   margin-left: 25%;
-  margin-top: 1%;
+  margin-top: 2%;
   width: 20%;
 }
 
@@ -322,30 +373,81 @@ label, input{
 #road4{
   position: relative;
   margin-left: 20%;
-  margin-bottom: 1%;
+  margin-top: 2%;
   width: 20%;
 }
 
 #TheRoad{
-  width: 90%;
+  width:100%;
 }
 
+
+/*Roadmap mobile version  */
+@media all and (max-width: 990px){
+  .wrap{
+  margin-left: 5%;
+  width: 60%;
+  min-width:0;
+  margin-top: 30%;
+}
+
+#road1, #road2, #road3, #road4{
+    position: relative;
+    margin-left:45%;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    width: 20%;
+}
+
+#road1{
+    margin-top: 12%;
+}
+
+#TheRoad{
+    transform: rotate(90deg);
+    margin-left:-350px;
+    min-width: 800px;
+}
+
+.Queue:hover{
+  transform: none;
+}
+
+.roadImage{
+    transform: rotate(90deg);
+}
+ .roadImage2{
+    transform: rotate(270deg);
+}
+ .markerTextUp{
+    top: 50%;
+    left: 25%;
+}
+ .markerTextDown{
+    top: 50%;
+    left: 25%;
+}
+ .marker{
+    width:40%;
+
+}
+}
 
 /* CONTACT */
 /* ------------ */
 .intro{
-	margin-left:7%;
-	margin-right:30%;
-	text-align:left;
+  margin-left:7%;
+  margin-right:30%;
+  text-align:left;
 }
 
 #contactInfo {
-	margin-left:7%;
-	width: 60%;
-	padding:50px;
+  margin-left:7%;
+  width: 60%;
+  padding:50px;
   }
 #contactInfo li{
-	color: white;
+  color: white;
 }
   
 /*how to apply*/
@@ -378,11 +480,11 @@ label, input{
 /* TODO: FIKS dette  */
 
 .bck {
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -2;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
 }
 
 #owner {
@@ -397,39 +499,54 @@ label, input{
   margin-right: -4%;
   margin-top: -38%;
   text-align: center;
-  margin-bottom: 15%
+  margin-bottom: 15%;
 }
 
 input, textarea{
-	  width: 60%;
+    width: 60%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     border-radius: 7px;
     border-color: white;
     border-width: medium;
-    background-color: #101832
+    background-color: #101832;
+}
 
+textarea{
+  color: white;
 }
 
 label{
-	color: #FCC90E;
+  color: #FCC90E;
     font-size: 90%;
     font-weight: bold;
 }
 
 .submit{
-	background-color: #FCC90E;
-	border:2px solid #FCC90E;
-	border-radius: 5px;
-	transition: transform .35s;
-	padding: 5px;
-  font-size: 15px
-
+  background-color: #FCC90E;
+  border:2px solid #FCC90E;
+  border-radius: 5px;
+  transition: transform .2s;
+  padding: 5px;
+  font-size: 15px;
 }
 
 .submit:hover{
-	transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height:30px;
+    background-color: white;
+    color: black;
+    font-size: 80%;
+    text-align: center;
+    padding-top: 1%;
 }
 
 .btnHome{
@@ -445,10 +562,9 @@ label{
 
 
 /*Mobile version*/
-@media all and (max-width: 800px) {
-.scroller{
-  display: none;
-}
+@media all and (max-width: 820px) {
+
+/*Buttons*/
 .buttonstyle{
   font-size: 60%;
   padding: 0;
@@ -467,8 +583,83 @@ float: right;
 .wrap{
   margin-top: 15%;
   width: 70%;
+
+#buttonCluster{
+  margin-left: 60%;
 }
 
+#buttonCluster{
+  position: relative;
+  margin-left: 75%;
+  margin-right: 5%;
+  margin-top: 4%;
+  width: 25%;
+}
+
+#vexi:hover, #buttin:hover, #contact:hover{
+  transform: none;
+}
+
+
+
+/*Roadmap  Har egen versjon ved lengere opp*/
+
+
+
+/* Contact */
+#formstad{
+  margin-top: 20%;
+  width: 100%;
+  margin-left: 0;
+}
+
+#owner{
+  width: 50%;
+  margin-left: 20%;
+}
+
+.intro{
+  margin-top:10%;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+
+#contactInfo {
+  width: 30%;
+}
+
+#applyForjob{
+  width: 80%;
+  margin-left: 10%;
+}
+
+#apply ul#applySteps {
+  width: 40%
+}
+#applySteps li#emailPrep {
+    list-style-image:none;
+    list-style-position:outside;
+    color: white;
+    margin-left: -30%;
+}
+#applySteps li#emailContent {
+    list-style-image:none;
+    list-style-position:outside;
+    color: white;
+    margin-left: -30%;
+}
+#applySteps li#emailSend {
+    list-style-image:none;
+    list-style-position:outside;
+    color: white;
+    margin-left: -30%;
+}
+
+
+/*Index*/
+.scroller{
+  display: none;
+}
 .star-svg{
   display: none;
 }
@@ -482,10 +673,13 @@ margin-top: 10%;
 #step1, #step2,#step3,#step4{
 margin: 0 0;
 width: 100%;
-position: relative;
 float: none;
 transition: .35;
 margin-top: 40%;
 margin-bottom: 40%;
+}
+
+#step1:hover,#step2:hover,#step3:hover,#step4:hover{
+    transform:  none;
 }
 }

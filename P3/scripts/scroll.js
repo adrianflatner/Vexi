@@ -1,5 +1,15 @@
 //Inspired CSS-tricks-Scroll Drawing: https://css-tricks.com/scroll-drawing/?fbclid=IwAR1aq3enUu3jn1lcvCzbW6bRMoV2iClPHJYRSZSigVNpuf4wtWTygQpfxEI
 
+
+//Check if the screen is in mobile size. If it is disable the animation.
+var w = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+if(w<990){
+  document.getElementById("step1").className="visited";
+  document.getElementById("step2").className="visited";
+  document.getElementById("step3").className="visited";
+  document.getElementById("step4").className="visited";
+}
+
 // Get a reference to the roadsvg
 var road = document.querySelector('#star-path');
 

@@ -1,4 +1,3 @@
-
 window.onscroll = function() {updateMenu()};
 
 
@@ -20,4 +19,3 @@ function updateMenu(){
   	feature4.className=(scrollPercentage > 0.95)?"feature selected":"feature";
 	
 }
-
