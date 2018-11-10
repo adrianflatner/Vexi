@@ -1,22 +1,23 @@
+
 body {
-    background: linear-gradient(
-      to bottom,
-      #101832,
-      #152455
+  background: linear-gradient(
+    to bottom,
+    #101832,
+    #152455
 	);
   font-family: "lato", sans-serif;
 }
 
 h1 {
-    font-family: "lato", sans-serif;
-    font-weight: 300;
-    color: white;
-    text-align: center;
-    font-size: 22px;
-    letter-spacing: 5px;
-    font-weight: 100;
-    padding: 25px 15px;
-    text-shadow: 1px 1px 1px #333;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 5px;
+  font-weight: 100;
+  padding: 25px 15px;
+  text-shadow: 1px 1px 1px #333;
 }
 h2 {
 	color: #FCC90E
@@ -24,13 +25,12 @@ h2 {
 
 p {
 	color: white;
-
-	line-height: 2
-  }
-  section {
+	line-height: 2;
+}
+section {
 	text-align:center;
-  }
-  
+}
+
 
 /*Side-menu. */
 
@@ -128,17 +128,6 @@ p {
 	transform: scale(1.1);
 }
 
-/*
-.buttonstyle{
-  width: 100%;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 20px;
-	color: black;
-	font-family: 'Lato', sans-serif;
-}
-*/
-
 
 /*Logo */
 
@@ -148,9 +137,6 @@ p {
   margin-top: 2em;
 	margin-left: 2em;
 }
-
-
-
 
 /*Form */
 
@@ -196,85 +182,94 @@ label, input{
 	transform: scale(1.1);
 }
 
-
-
 /*Backgrounds*/
 
 .bck{
 	width: 100%;
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
   z-index: -2;
 }
 
-.stepContainer {
-  width: 200px;
-  color: white;
-  transition: transform .35s;
-  text-align:center;
+/* Scrollergreia og telefonene på forsiden */
+#allStepsContainer {
+  width: 800px;
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+  
+.star-svg {
+  right: 0;
+  width: 100%;
+  position: absolute;
+  top: 360px;
 }
 
-.stepContainer:hover {
-  transform:  scale(1.3);
+.stepContainer {
+  min-width: 200px;
+  width: 25%;
+  color: gray;
+  margin: auto;
+  text-align:center;
+  position: relative;
+  transition: .35s;
 }
-/* Scrollergreia og telefonene på forsiden */
+
+.stepContainer > div {
+  margin: 10px;
+  padding: 10px;
+  position: relative; 
+  bottom: 120px;
+  z-index: -1;
+  background-color: white;
+  border-radius: 5px;
+  transition: .35s; 
+}
+
 #stepContainer1 {
   float: right;
 }
 
-
-.star-svg {
-    right: 0;
-    width: 100%;
-    position: absolute;
-    top: 360px;
-  }
-
-
-#steps {
-    width: 620px;
-    margin: auto;
-	  margin-top: 200px;
-    margin-bottom: 50px;
+#stepContainer2{
+  float:left;
+  margin-top:550px;
 }
 
-#step1, #step2,#step3,#step4{
-    width: 200px;
-    position: relative;
-    float: right;
-    transition: transform .35s;
+#stepContainer3{
+  float:right;
+  margin-top: 1300px;
+}
+#stepContainer4{
+  float:left;
+  margin-top: 1150px;
 }
 
-
-#stepContainer1:hover, #stepContainer2:hover,#stepContainer3:hover,#stepContainer4:hover{
-     transform:  scale(1.3);
-     
+.visited {
+  transition: 0.35s;
+  transform: scale(1.3);
 }
 
-#step2{
-    float:left;
-    margin-top: 450px;
-    margin-left: -80px
+.visited + div{
+  transform:  translate(0, 150px);
 }
 
-#step3{
-    margin-top: 1200px;
-    margin-right: -240px;
-}
-#step4{
-    float:left;
-    margin-top: 1900px;
-    margin-left: -140px;
-    margin-bottom:200px;
-}
-
-#step1.visited{
+#stepImg1.visited{
 	content:url("images/index/steps/step1_visited.svg");
 }
-#step2.visited{
+#stepImg2.visited{
 	content:url("images/index/steps/step2_visited.svg");
 }
+
+#stepImg3.visited{
+	content:url("images/index/steps/step2_visited.svg");
+}
+
+#stepImg4.visited{
+	content:url("images/index/steps/step2_visited.svg");
+}
+
 
 
 

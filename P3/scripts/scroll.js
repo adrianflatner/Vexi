@@ -17,12 +17,6 @@ window.addEventListener("scroll", function(e) {
  
   // What % of the page is scrolled? 
   var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-  
-  //When scrolling passed, the image will get the class visited
-  document.getElementById("step1").className=(scrollPercentage > 0.01)?"visited":"";
-  document.getElementById("step2").className=(scrollPercentage > 0.27)?"visited":"";
-  document.getElementById("step3").className=(scrollPercentage > 0.62)?"visited":"";
-  document.getElementById("step4").className=(scrollPercentage > 0.95)?"visited":"";
 
   // Length to offset the dashes
   var drawLength = pathLength * scrollPercentage;
@@ -37,4 +31,11 @@ window.addEventListener("scroll", function(e) {
     road.style.strokeDasharray = pathLength + ' ' + pathLength;
   }
   
+  //When scrolling passed, the image will get the class visited
+  
+  document.getElementById("stepImg1").className=(scrollPercentage > 0.01)?"visited":"";
+  document.getElementById("stepImg2").className=(scrollPercentage > 0.27)?"visited":"";
+  document.getElementById("stepImg3").className=(scrollPercentage > 0.62)?"visited":"";
+  document.getElementById("stepImg4").className=(scrollPercentage > 0.95)?"visited":"";
+
 });
