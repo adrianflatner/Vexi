@@ -34,8 +34,8 @@ window.addEventListener("scroll", function(e) {
   //When scrolling passed, the image will get the class visited
   
   document.getElementById("stepImg1").className=(scrollPercentage > 0.01)?"visited":"";
-  document.getElementById("stepImg2").className=(scrollPercentage > 0.27)?"visited":"";
-  document.getElementById("stepImg3").className=(scrollPercentage > 0.62)?"visited":"";
+  document.getElementById("stepImg2").className=(scrollPercentage > 0.29)?"visited":"";
+  document.getElementById("stepImg3").className=(scrollPercentage > 0.66)?"visited":"";
   document.getElementById("stepImg4").className=(scrollPercentage > 0.95)?"visited":"";
 
 });

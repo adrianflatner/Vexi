@@ -1,5 +1,6 @@
 
 body {
+  height: 2800px;
   background: linear-gradient(
     to bottom,
     #101832,
@@ -35,10 +36,11 @@ section {
 /*Side-menu. */
 
 .scroller{
-	position: fixed;
+  position: fixed;
+  float:right;
 	height: 25%;
-	width: 15%;
-	margin-left: 82%;
+  width: 15%;
+  max-width: 200px;
 	margin-right: 5%;
 	top: 47%;
 	z-index: 1;
@@ -189,7 +191,7 @@ label, input{
 	position: relative;
 	top: 0;
 	left: 0;
-  z-index: -2;
+  z-index: -3;
 }
 
 /* Scrollergreia og telefonene på forsiden */
@@ -205,6 +207,8 @@ label, input{
   width: 100%;
   position: absolute;
   top: 360px;
+  margin-bottom: 300px;
+  z-index: -2;
 }
 
 .stepContainer {
@@ -214,7 +218,7 @@ label, input{
   margin: auto;
   text-align:center;
   position: relative;
-  transition: .35s;
+  transition: all .35s;
 }
 
 .stepContainer > div {
@@ -234,16 +238,24 @@ label, input{
 
 #stepContainer2{
   float:left;
-  margin-top:550px;
+  margin-top:600px;
 }
 
 #stepContainer3{
   float:right;
-  margin-top: 1300px;
+  margin-top: 1350px;
+  margin-right: -200px;
+
 }
 #stepContainer4{
   float:left;
-  margin-top: 1150px;
+  margin-top: 1925px;
+  margin-left: -200px;
+}
+
+.stepContainer > img {
+  transition: 0.35s; 
+
 }
 
 .visited {
@@ -254,6 +266,7 @@ label, input{
 .visited + div{
   transform:  translate(0, 150px);
 }
+
 
 #stepImg1.visited{
 	content:url("images/index/steps/step1_visited.svg");
