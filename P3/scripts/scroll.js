@@ -4,10 +4,10 @@
 //Check if the screen is in mobile size. If it is disable the animation.
 var w = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
 if(w<990){
-  document.getElementById("step1").className="visited";
-  document.getElementById("step2").className="visited";
-  document.getElementById("step3").className="visited";
-  document.getElementById("step4").className="visited";
+  document.getElementById("stepImg1").className="visited";
+  document.getElementById("stepImg2").className="visited";
+  document.getElementById("stepImg3").className="visited";
+  document.getElementById("stepImg4").className="visited";
 }
 
 // Get a reference to the roadsvg
