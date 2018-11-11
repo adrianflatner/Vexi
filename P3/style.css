@@ -32,15 +32,22 @@ section {
 	text-align:center;
 }
 
-/*Side-menu. */
+/* Side-menu. */
 
 .scroller{
   overflow: hidden;
   position: fixed;
-  margin-left: 83%;
+  margin-left: 3%;
 	top: 40%;
 	z-index: 1;
 }
+
+/* Makes the side-menu dissapear when the screen is to small to fit both the scroller and the menu */
+@media all and (max-width: 1435px) {
+  .scroller{
+    display: none;
+  }
+  }
 
 .feature{
   vertical-align: middle;

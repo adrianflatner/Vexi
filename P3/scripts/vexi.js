@@ -13,8 +13,8 @@ function updateMenu(){
 	var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 	
 	//updating classNames while scrolling the page
-	feature.className=(scrollPercentage < 0.25)?"feature selected":"feature";
-  	feature2.className=(scrollPercentage > 0.25 && scrollPercentage < 0.66)?"feature selected":"feature";
+	feature.className=(scrollPercentage < 0.29)?"feature selected":"feature";
+  	feature2.className=(scrollPercentage > 0.29 && scrollPercentage < 0.66)?"feature selected":"feature";
   	feature3.className=(scrollPercentage > 0.66 && scrollPercentage < 0.95)?"feature selected":"feature";
   	feature4.className=(scrollPercentage > 0.95)?"feature selected":"feature";
 	
