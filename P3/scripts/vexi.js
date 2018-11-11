@@ -14,8 +14,8 @@ function updateMenu(){
 	
 	//updating classNames while scrolling the page
 	feature.className=(scrollPercentage < 0.25)?"feature selected":"feature";
-  	feature2.className=(scrollPercentage > 0.25 && scrollPercentage < 0.6)?"feature selected":"feature";
-  	feature3.className=(scrollPercentage > 0.6 && scrollPercentage < 0.95)?"feature selected":"feature";
+  	feature2.className=(scrollPercentage > 0.25 && scrollPercentage < 0.66)?"feature selected":"feature";
+  	feature3.className=(scrollPercentage > 0.66 && scrollPercentage < 0.95)?"feature selected":"feature";
   	feature4.className=(scrollPercentage > 0.95)?"feature selected":"feature";
 	
 }
