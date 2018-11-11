@@ -321,6 +321,10 @@ textarea {
 
 }
 
+.roadText p{
+    text-align: left;
+}
+
 .Queue{
     display:inline-block;
     min-width: 270px;
