@@ -35,7 +35,7 @@ window.addEventListener("scroll", function(e) {
   road.style.strokeDashoffset = pathLength - drawLength;
     
   // When complete, remove the dash array, otherwise shape isn't quite sharp
-  if (scrollPercentage >= 0.99) {
+  if (scrollPercentage >= 1) {
     road.style.strokeDasharray = 20; 
   } else {
     road.style.strokeDasharray = pathLength + ' ' + pathLength;
