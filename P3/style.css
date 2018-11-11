@@ -6,7 +6,11 @@ body {
     #152455
 	);
   font-family: "lato", sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
+
 
 h1 {
   font-weight: 300;
