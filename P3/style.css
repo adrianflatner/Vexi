@@ -462,6 +462,7 @@ textarea {
     font-size:17px;
     color: #FCFCFF;
     padding:8px;
+    margin-bottom: 1%;
 }
 #applySteps li#emailPrep {
     list-style-image:url(images/contact/ringemail.png);
@@ -478,6 +479,7 @@ textarea {
     list-style-position:outside;
     color: #FCFCFF;
 }
+
 
 #owner {
   margin-left:5em;
