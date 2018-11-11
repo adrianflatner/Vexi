@@ -555,7 +555,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
-	
+  
 #owner{
   width: 60%;
   margin-left: 20%;
@@ -598,18 +598,35 @@ footer {
 }
 
 .stepContainer {
-padding-bottom: 3em;
+  padding-bottom: 3em;
 }
 
 .stepContainer > div {
   bottom: 20px;
+  transform: none;
+  margin-bottom: 30px;
 }
 
 #stepContainer1, #stepContainer2, #stepContainer3, #stepContainer4{
 margin: 0 0;
 width: 45%;
 float: none;
+transform: none;
 }
+
+.visited {
+  transform: none;
+}
+
+.stepContainer {
+  transform: none;
+  
+}
+
+img#stepImg1, img#stepImg2, img#stepImg3, img#stepImg4{
+  margin-bottom: 20px;
+}
+
 
 
 /* Roadmap mobile version */ 
