@@ -550,6 +550,12 @@ footer {
   display: inline;
 }
 
+#textArea, #submitButton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+	
 #owner{
   width: 60%;
   margin-left: 20%;
