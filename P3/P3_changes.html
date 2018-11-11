@@ -27,7 +27,7 @@
     <section id="client">
         <h2>Administrative Details </h2>
         <p>Our client is Andreas Ore Larssen, the creator and owner of Vexi. </p>
-        <p><b>Link to our website: </b><a href="../../Backup/WebTech/P3/index.html">Vexi</a></p>
+        <p><b>Link to our website: </b><a href="index.html">Vexi</a></p>
     </section>
     <section id="changes">
         <h2>Changes we have made </h2>
@@ -61,15 +61,22 @@
             roadmap.html background which was planned, but not mentioned in P2.
         </p>
 
-        <p><b>Changes to roadmap.html: </b> </p>
+        <p><b>Changes to roadmap.html: </b> This page is in general as intended. The only difference is the zoom when
+            the elements are hovered. This is added to make the road a bit interactive and to make it seem more than
+            just a picture - and in a sense seem like a site that gets updated whenever a plan is changed. The mobile
+            version rotates the road 90 degrees and keeps every step at one side. This was not mentioned in P2, but
+            ended up being the best solution.
+        </p>
 
         <p><b>Changes to css: </b> From P2, we were going to have four css documents. This was later changed to only
-            style.css, by the project requirements. This document styles the whole site, and is consequently pretty long.
+            style.css, by the project requirements. This document styles the whole site, and is consequently pretty
+            long.
         </p>
 
         <p><b>Changes to scripts: </b> The names for the scripts are different, but contain the same information as
-            planned. We now have a file for feedback from form, a file for the scrolling and a general script for the
-            Vexi site. </p>
+            planned. We now have a file for feedback from form, a file for the scrolling, a general script for the Vexi
+            site and a script for roadmap. The roadmap script is used to check if the site is in desktop or mobile
+            version. If it is in mobile version, some of the elements has to change order to make sense. </p>
 
 
     </section>
@@ -83,7 +90,6 @@
                 <li>contact/</li>
                 <ul>
                     <li>andreasol.png</li>
-                    <li>backgroundRoad.png</li>
                     <li>ringemail.png</li>
                     <li>ringempl.png</li>
                     <li>ringsend.png</li>
@@ -92,37 +98,53 @@
                 <ul>
                     <li>steps/</li>
                     <ul>
+                        <li>getInTouch.svg</li>
+                        <li>getInTouchActive.svg</li>
+                        <li>needARide.svg</li>
+                        <li>needARideActive.svg</li>
                         <li>notVisited.png</li>
-                        <li>step1.svg</li>
-                        <li>step1_visited.svg</li>
-                        <li>step2_visited.svg</li>
-                        <li>visited.png</li>
+                        <li>ride.svg</li>
+                        <li>rideActive.svg</li>
+                        <li>settle.svg</li>
+                        <li>settleActive.svg</li>
                     </ul>
                     <li>background.svg</li>
-                    <li>logo.png</li>
+                    <li>vexi.svg</li>
                 </ul>
                 <li>roadmap/</li>
                 <ul>
-                    <li>comming.png</li>
-                    <li>commingGray.png</li>
-                    <li>vector2.png</li>
+                    <li>Ellipse1.svg</li>
+                    <li>Ellise2.svg</li>
+                    <li>Ellipse3.svg</li>
+                    <li>Ellipse4.svg</li>
+                    <li>vector2.svg</li>
                 </ul>
-                <li>backgroundFooter.png</li>
-                <li>homebtn.svg</li>
-            </ul>
-            <li>index.html</li>
-            <li>roadmap.html</li>
-            <li>contact.html</li>
-            <li>stylesheets/</li>
-            <ul>
-                <li>style.css</li>
+                <li>VEXILogo.svg</li>
+                <li>VEXILogoLight.svg</li>
+                <li>apple-touch-icon.png</li>
+                <li>favicon-16x16.png</li>
+                <li>favicon-32x32.png</li>
+                <li>safari-pinned-tab.svg</li>
             </ul>
             <li>scripts/</li>
             <ul>
                 <li>formFeedback.js</li>
+                <li>roadmap.js</li>
                 <li>scroll.js</li>
                 <li>vexi.js</li>
             </ul>
+            <li>P3_changes.html</li>
+            <li>android-chrome-192x192.png</li>
+            <li>android-chrome-512x512.png</li>
+            <li>browserconfig.xml</li>
+            <li>changes.html</li>
+            <li>contact.html</li>
+            <li>favicon.ico</li>
+            <li>index.html</li>
+            <li>mstile-150x150.png</li>
+            <li>roadmap.html</li>
+            <li>site.webmanifest</li>
+            <li>style.css</li>
         </ul>
     </section>
 
@@ -145,7 +167,7 @@
             <tr>
                 <td>index.html</td>
                 <td>Will show information of the app, Scrollable.</td>
-                <td>Nina</td>
+                <td>Nina, Sondre</td>
                 <td>01.11</td>
             </tr>
             <tr>
@@ -165,7 +187,7 @@
             <tr>
                 <td>style.css</td>
                 <td>General css for whole application</td>
-                <td>Sondre</td>
+                <td>Henrik</td>
                 <td>01.11</td>
             </tr>
             <tr>
@@ -173,7 +195,7 @@
                 <td>When scrolling the index page, the current element in the sidemenu should be highlighted.Can also
                     navigate through the index page with the sidemenu-- html
                 </td>
-                <td>Adrian</td>
+                <td>Nina</td>
                 <td>25.10</td>
             </tr>
             <tr>
@@ -185,7 +207,13 @@
             <tr>
                 <td>vexi.js</td>
                 <td>The journey line should highlight the part you have left to travel. See illustrations.</td>
-                <td>Sondre</td>
+                <td>Emilie</td>
+                <td>25.10</td>
+            </tr>
+            <tr>
+                <td>roadmap.js</td>
+                <td>Mobileversion of roadmap.</td>
+                <td>Henrik</td>
                 <td>25.10</td>
             </tr>
         </table>
